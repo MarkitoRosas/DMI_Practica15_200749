@@ -16,7 +16,7 @@
 
 ## Septiempre - Diciembre
 
-## PRÁCTICA 15: Creacion de una Api Rest para la aplicacion del videojuego.
+## PRÁCTICA 15: Implementacion de rutas y middlewares para el jugador
 
 ## Descripción:Una práctica de una API REST desarrollada en Node.js es un enfoque eficiente y versátil para crear servicios web. Esta API ofrece operaciones CRUD (Crear, Leer, Actualizar y Borrar) para gestionar recursos de datos. Utilizando Express.js, se configuran las rutas y controladores correspondientes para cada operación.
 
