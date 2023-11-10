@@ -1,0 +1,22 @@
+{
+  "name": "mx.utxj.ti.dmi.api_videogame",
+  "version": "1.0.0",
+  "description": "API Rest para realizar las operaciones CRUD a una Base de Datos Relacional, del proyecto de videojuego ",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "API",
+    "REST",
+    "MySQL",
+    "Sequelize",
+    "Express"
+  ],
+  "author": "T.S.U. Marco Antonio Rosas",
+  "license": "ISC",
+  "dependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
