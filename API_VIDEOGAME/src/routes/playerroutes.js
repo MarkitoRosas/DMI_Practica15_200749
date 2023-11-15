@@ -1,13 +1,14 @@
-import Express from "express";
-import{ createPlayer, findOneById, findOneByEmail, updatePlayer, changePlayerPortrait, deletePlayer} from "../controllers/playerControler.js"
+//playerRoutes.js
+import express from "express";
+import obj from "../controllers/playerController.js"
+const ROUTER = express.Router()
 
- const router = Express.Router()
+ROUTER.get('/getAll', obj.getAllPlayers)
+ROUTER.get('/getOneById/:id', obj.findOneById)
+ROUTER.get('/getOneByEmail/:Email', obj.findOneByEmail)
+ROUTER.post('/createOnePlayer', obj.createOnePlayer)
+ROUTER.put('/updatePlayer/:id', obj.putPlayer)
+ROUTER.delete('/delPlayer/:id', obj.delPlayer)
+ROUTER.patch('/patchPlayer/:id', obj.patchPlayer)
 
-router.post("/newPlayer", createPlayer)
-router.get("/findOneById/:playerID", findOneById)
-router.get("/findOneByEmail/:email", findOneByEmail)
-router.put("/update/:playerID", updatePlayer)
-router.patch("/changePortrait/:playerID", changePlayerPortrait)
-router.delete("/deletePlayer/:playerId", deletePlayer)
-
- export default router
+export default ROUTER;
